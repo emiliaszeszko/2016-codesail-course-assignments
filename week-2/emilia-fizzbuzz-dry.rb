@@ -23,3 +23,35 @@ end
 ary.each do |n|
   fizzbuzz(n)
 end
+
+a = lambda do |n|
+  if n%3 == 0 && n%5 == 0
+    puts "FizzBuzz"
+  elsif n%3 == 0
+    puts "Fizz"
+  elsif n%5 == 0
+    puts "Buzz"
+  else
+    puts n
+  end
+end
+
+ary.each do |n|
+  a.call(n)
+end
+
+b = Proc.new do |n|
+    if n%3 == 0 && n%5 == 0
+      puts "FizzBuzz"
+    elsif n%3 == 0
+      puts "Fizz"
+    elsif n%5 == 0
+      puts "Buzz"
+    else
+      puts n
+    end
+  end
+
+ary.each do |n|
+  b.call(n)
+end
