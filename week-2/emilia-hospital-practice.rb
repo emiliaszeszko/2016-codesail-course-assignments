@@ -23,7 +23,10 @@ class Hospital < Building
   def make_sound
     puts "WEEEOWWW"
   end
+  def self.local_34
+    puts "I'm one of the 986!"
+  end
 end
 
 c = Hospital.new(2, 4, 4, 5, ["brick"], ["black"], true)
-puts c 
+puts c
