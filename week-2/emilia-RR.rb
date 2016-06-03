@@ -1,4 +1,5 @@
 ary = Array(1..6)
+live_bullet_barrel = rand(1..6)
 
 puts "Hello. Thank you for playing Russian Roulette with me! I am notoriously good at this game. As you can see, I am still alive. Not so for my former opponents! Mwahahahaha!
 
@@ -7,7 +8,12 @@ Let me explain the rules. There are six barrels to a gun with one live bullet. T
 Would you like to shoot first (Y/N)?"
 user_input = gets.downcase.strip.chomp
 if user_input == "y"
-  puts "How many shots do you choose to take "
+  puts "Now, let's assign a random barrel to the bullet.  Type 'random barrel'"
+  random_barrel = gets.downcase.strip.chomp
+  if random_barrel == "random barrel"
+    puts "live_bullet_barrel"
+  end
+  puts 
   user_shots = gets
   if user_shots == 1
     puts ""
