@@ -1,0 +1,20 @@
+ICAs and Homework CS Weeks 0-2
+
+- Donald Drumpf HTML/CSS
+- About Me Practice
+- Class Directory
+- ICA review shell commands
+- Email firstname.lastname.txt file to CS
+- Name Validation Script
+- Fizz Buzz
+- Fizz Buzz DRY - updo eachdo
+- ICA Underwater Basket Weaving
+- ICA Meals from Yesterday
+- ICA Answer to Life
+- 99 Bottles
+- Russian Roulette
+- Fractions
+- Grocery Shopping
+- Duplicate Products
+- Russian Roulette Unabridged
+
