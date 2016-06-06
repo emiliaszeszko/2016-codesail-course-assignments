@@ -14,11 +14,19 @@ class Fractions
   end
 
   def to_fraction
-    puts @numerator.to_s + "/" + @denominator.to_s
+    if @denominator != 0
+      puts @numerator.to_s + "/" + @denominator.to_s
+    else
+      puts "Error, your denominator cannot equal zero."
+    end
   end
 
   def simplify
-    puts @numerator.to_f / @denominator.to_f
+    if @denominator != 0
+    foo = @numerator.gcd(@denominator)
+    @numerator / foo
+    @denominator / foo
+
   end
 
   def multiplication(numerator, denominator)
